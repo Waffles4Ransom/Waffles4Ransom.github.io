@@ -1,11 +1,11 @@
 # Site settings
-author: Jenna Ransom
-title: 
+author: Jenna Ransom 
+title: FULL STACK
 header-img: img/home-bg.png
 email: jenna.ransom@gmail.com
-copyright_name: Jenna Ransom
+copyright_name: Jenna Ransom 
 description: > # this means to ignore newlines until "baseurl:"
-  
+  hungry for knowledge & waffles
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  Waffles4Ransom
