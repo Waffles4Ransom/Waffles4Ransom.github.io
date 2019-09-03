@@ -5,9 +5,10 @@ date:       2019-09-03 17:48:57 -0400
 permalink:  ive_got_the_world_on_a_string
 ---
 
-# Sinatra Project Time!!
 
 ![](https://media.giphy.com/media/B8NSo2tYq4SRi/giphy.gif)
+
+# Sinatra Project Time!!
 
 This Sinatra web app should:
 * be a simple content management system (CMS)
