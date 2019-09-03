@@ -35,12 +35,12 @@ The Tikiphiles is a place for anyone to join so they can record and rate each ti
 Knowing what to order (or never order again!) is half the battle. 
 
 ### Basic Features
-* once a user has signed up they can view - all drinks uploaded by every user on the community homepage or  a personal homepage to view all their own drinks
+* once a user has signed up they can view - all drinks uploaded by every user on the community homepage or a personal homepage of all their own drinks
 * the user can create, edit, and delete a drink 
 * a drink has a name, type, bar & location, a rating out of 0-10, and an optional image 
 
 ### Getting Started
-So the steps I followed to bring this website into the world:
+The steps I followed to bring this website into the world:
 1. build out the basic file structure 
 2. set up the git repo 
 3. set up the mechanics to get the site wired up correctly a lá a Gemfile, config.ru, env.rb, .gitignore, etc.
@@ -55,8 +55,8 @@ So the steps I followed to bring this website into the world:
 Now I would just like to take a small detour here to address #2 "set up the git repo"...
 
 If you ever find yourself displeased with your beginnings of a project and
-you are feeling a dangrous combination of dramatic and frustrated 
-so you delete it ALL including the repo on your Github
+you are feeling a dangerous combination of dramatic + frustrated 
+so you delete IT ALL including the repo on your Github
 and start over in a haste and run a  `git init` in the root directory of your computer...
 
 VSCode will be very upset with you. It will get overwhelmed trying to stage EVERY FILE ON YOUR COMPUTER.
