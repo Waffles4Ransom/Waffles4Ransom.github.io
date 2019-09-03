@@ -5,7 +5,7 @@ date:       2019-09-03 17:48:57 -0400
 permalink:  ive_got_the_world_on_a_string
 ---
 
-## Sinatra Project Time!!
+# Sinatra Project Time!!
 
 ![](https://media.giphy.com/media/B8NSo2tYq4SRi/giphy.gif)
 
@@ -26,7 +26,7 @@ But that's it.
 
 ANYWAYS
 
-### The TIKIPHILES
+## The TIKIPHILES
 
 ![](https://i.imgur.com/QPWwtNem.png)
 
@@ -34,12 +34,12 @@ The Tikiphiles is a place for anyone to join so they can record and rate each ti
 
 Knowing what to order (or never order again!) is half the battle. 
 
-#### Basic Features
+### Basic Features
 * once a user has signed up they can view - all drinks uploaded by every user on the community homepage or  a personal homepage to view all their own drinks
 * the user can create, edit, and delete a drink 
 * a drink has a name, type, bar & location, a rating out of 0-10, and an optional image 
 
-#### Getting Started
+### Getting Started
 So the steps I followed to bring this website into the world:
 1. build out the basic file structure 
 2. set up the git repo 
