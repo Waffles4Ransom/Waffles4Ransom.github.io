@@ -19,15 +19,16 @@ Now not to be a one-trick pony, but when I read that this application should tra
 
 You can take the tiki drink away from the girl, but can't get the girl away from tiki drinks. C'est la vie. 
 
-I HAVE other interests. I promise. 
+I *have* OTHER interests. I promise. 
 
-Waffles and cats.
+...waffles and cats...
 
 But that's it. 
 
 ANYWAYS
 
 ## The TIKIPHILES
+ *...cue the X-files intro song...*
 
 ![](https://i.imgur.com/QPWwtNem.png)
 
@@ -48,7 +49,7 @@ The steps I followed to bring this website into the world:
 4. build out the ApplicationController, which inherits from Sinatra::Base 
 5. test by running `shotgun` and check in the browser at `localhost:9393`
 6. make a Rakefile and console task for testing
-7. add the models and set up their associations
+7. add the models and set up their associations using ActiveRecord
 8. create a database, migrate it, and seed it
 9. build other controllers and make sure they are mounted in the config.ru
 10. go to town coding the routes and views 
@@ -76,17 +77,22 @@ While cruising along in the last step,  #10 "go to town coding the routes and vi
 
 ![](https://i.imgur.com/hNOIIvmt.png)
 
-This line of code `@drink = Drink.find_by(id: params[:id])`  , my @drink variable was coming up nil. It wasn't finding the right drink in the database, but why?
+Instead of seeing a freshly updated drink card being rendered by the Drink index.erb, I was getting "undefined method update for nil:NilClass" response. 
+
+Which means that `@drink.update` in the patch request is all...
+![](http://giphygifs.s3.amazonaws.com/media/b5XrRoZjBl1Pq/giphy.gif)
+
+because in this line of code `@drink = Drink.find_by(id: params[:id])`  , the @drink variable was coming up nil. But why?
 
 So I threw in a binding.pry to find out what params[:id] I was receiving.  
 
 ![](https://i.imgur.com/x5VKNscl.png?1)
 
-Turns out the id was coming through as "edit". Oh boy. So now I had to go track down the form in my Edit View to see why it was passing off "edit" as the id and low and behold I had set the form's action to 
+Turns out the id was coming through as "edit". Oh boy. So now I had to go track down the form in my Edit View to see why it was passing off "edit" as the id and low and behold I had set the form's action to... 
 ```
 <form action="/drinks/<% @drink.id %>/edit" method="POST">
 ```
-when it should have been 
+when it should have been...
 ```
 <form action="/drinks/<%= @drink.id %>" method="POST">
 ```
