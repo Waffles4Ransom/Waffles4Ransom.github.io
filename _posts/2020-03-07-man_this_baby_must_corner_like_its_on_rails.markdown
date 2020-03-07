@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "'Man, this baby must corner like it's on rails!'"
-date:       2020-03-07 06:30:09 +0000
+date:       2020-03-07 01:30:10 -0500
 permalink:  man_this_baby_must_corner_like_its_on_rails
 ---
 
@@ -61,7 +61,7 @@ Testing out those relationships in the console before anything else was so cruci
 
 While checking on them I had a new error crop up..."ActiveRecord::AmbiguousSourceReflectionForThroughAssociation " 
 
-###### ActiveRecord says:
+#### ActiveRecord says:
 
 ![](https://i.imgur.com/nNbRcMB.gif)
 
@@ -124,7 +124,7 @@ end
 
 Let's talk about lazy evaluation. Most ActiveRecord queries will return a Relation, instead of the actual object. It will only query the database until it absolutely has to, which in the long run is more efficient and flexible. By flexible, I mean we can chain more complex queries all together to really pinpoint a result and ActiveRecord will choose the best time to query the database. You need to use a single_value_method to be able to retrieve a single object from the query.
 
-So` Movie.where("date_attended > ?", DateTime.now) `will only return the ActiveRecord::Relation. It will look and smell like the object in an array but it is not, it is an instance of the Active Record Relation! If I want access to the actual object the query found I need to chain on #first or #last to retrieve the data I want.
+So ` Movie.where("date_attended > ?", DateTime.now) ` will only return the ActiveRecord::Relation. It will look and smell like the object in an array but it is not, it is an instance of the Active Record Relation! If I want access to the actual object the query found I need to chain on #first or #last to retrieve the data I want.
 
 On the flipside, ActiveRecord does have Finder Methods, such as #find and #find_by, that will fire the SQL query immediately and return a single instance. 
 
