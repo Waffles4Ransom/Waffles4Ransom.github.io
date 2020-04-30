@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "'Mornings are for java(script) and contemplation...'"
-date:       2020-04-30 06:21:53 +0000
+date:       2020-04-30 02:21:54 -0400
 permalink:  mornings_are_for_java_script_and_contemplation
 ---
 
@@ -14,7 +14,7 @@ The JavaScript project should:
 * have  a backend Rails API 
 * use Object Oriented JS
 
-### Stranger Messages 
+## Stranger Messages 
 
 A place where you can send messages from the Upside Down!
 
@@ -27,7 +27,7 @@ To demostrate some fun DOM manip for my JS project, I decided to create an appli
 
 ![](https://i.imgur.com/Pjmm2Xdl.png)
 
-#### Basic Features
+### Basic Features
 
 * user can play past messages sent by others 
 * to send their own message, user claims a username
@@ -36,7 +36,7 @@ To demostrate some fun DOM manip for my JS project, I decided to create an appli
 * message content can be revealed
 * message can be deleted by it's user  
 
-#### Getting Started 
+### Getting Started 
 1. create a Rails API for the backend (database)
 2. generate migrations, models, routes and controller actions
 3. test out the model relationships in the console 
@@ -51,9 +51,11 @@ To demostrate some fun DOM manip for my JS project, I decided to create an appli
 To avoid having a giant index.js file that's a jumble of classes and functions, I opted to take the modular approach and subdivided my JS files into adapters and components, each it's own class. 
 
 Adapters > messagesAdapter.js & usersAdapter.js
+
 The adpater classes handle the fetch requests to the backend. For my application, those are to Create (POST), Read (GET), and Delete(DELETE). No updating allowed here, sorry. 
 		 
 Components > app.js, user.js & message.js 
+
 The user and message classes instantiate new objects for each user and message and have functions to generate HTML for each instance. 
 
 The application kicks off in the index.js, which mounts a new App class instance. The App class is where most of the action happens. It is serviced by the adapters and the user and message classes. I am able to keep things like all the messages or the current user as a property of App and can access them throughout the code without having to make additional network calls. Modular code is organized code. 
