@@ -48,7 +48,7 @@ To demostrate some fun DOM manip for my JS project, I decided to create an appli
 9. set up event listeners for the user to interact with the app w/o refreshing the page
 10. draw out string lights with pure CSS ( a test of patience)
 
-To avoid having a giant index.js file that's a jumble of classes and functions, I opted to take the modular approach and subdivided my JS files into adapters and components, each it's own class. 
+To avoid a giant index.js file that's a jumble of classes and functions, I opted to take the modular approach and subdivided my JS files into adapters and components, each it's own class. 
 
 Adapters > messagesAdapter.js & usersAdapter.js
 
@@ -68,7 +68,7 @@ I mean, the power, the possibilities...but JS has no love for throwing an error,
 
 Sidestep, let me tell you about my best friend `console.log()`...She can tell you when your reaching a function or that your event listener is working. She can confirm that the value you're looking for is what you're receiving. She does it a lot. In summary, it is an incredibly useful tool. Maybe it's not the most efficient, but it is simple. When the whole point of my application (for a message to play out letter-by-letter) wasn't working I console-logged almost every step and was able to pinpoint the moment it was failing. 
 
-Now JavaScript's minimalistic error throwing also causes a problem when it comes to wanting to validate user input. To keep my database clean and orderly, I have model validations. There will be no blank usernames here sir! A message's content cannot have numbers or special characters. Letters only or the highway bud! But to be able to tell the user what is wrong with their submission, I need to catch these validation errors and display them to the DOM. To do so you've got to force your fetch request to hit a catch by checking the status of the response. 
+Now JavaScript's minimalistic error throwing also causes a problem when it comes to validating user input. To keep my database clean and orderly, I have model validations. There will be no blank usernames here sir! A message's content cannot have numbers or special characters. Letters only or the highway bud! But to be able to tell the user what is wrong with their submission, I need to catch these validation errors and display them to the DOM. To do so you've got to force your fetch request to hit a catch by checking the status of the response. 
 
 ```
 async checkStatus(res) {
