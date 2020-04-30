@@ -50,13 +50,13 @@ To demostrate some fun DOM manip for my JS project, I decided to create an appli
 
 To avoid a giant index.js file that's a jumble of classes and functions, I opted to take the modular approach and subdivided my JS files into adapters and components, each it's own class. 
 
-Adapters > messagesAdapter.js & usersAdapter.js
+Adapters - messagesAdapter.js & usersAdapter.js
 
-The adpater classes handle the fetch requests to the backend. For my application, those are to Create (POST), Read (GET), and Delete(DELETE). No updating allowed here, sorry. 
+The adpater classes handle the fetch requests to the backend. For this application, those are to Create (POST), Read (GET), and Delete(DELETE). No updating allowed here, sorry. 
 		 
-Components > app.js, user.js & message.js 
+Components - app.js, user.js & message.js 
 
-The user and message classes instantiate new objects for each user and message and have functions to generate HTML for each instance. 
+The user and message classes instantiate new objects for each user and message and have getters to generate HTML for each instance. 
 
 The application kicks off in the index.js, which mounts a new App class instance. The App class is where most of the action happens. It is serviced by the adapters and the user and message classes. I am able to keep things like all the messages or the current user as a property of App and can access them throughout the code without having to make additional network calls. Modular code is organized code. 
 
