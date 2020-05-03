@@ -6,7 +6,7 @@ permalink:  mornings_are_for_java_script_and_contemplation
 ---
 
 
-![](https://media.giphy.com/media/XtQFRwoz77Suc/giphy.gif)
+![](https://i.imgur.com/nvp16wn.gif) 
 
 The JavaScript project should: 
 * be a SPA (single page application)
