@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "'Man, this baby must corner like it's on rails!'"
+title:      "'Man, this baby must corner like it's on Rails!'"
 date:       2020-03-07 01:30:10 -0500
 permalink:  man_this_baby_must_corner_like_its_on_rails
 ---
