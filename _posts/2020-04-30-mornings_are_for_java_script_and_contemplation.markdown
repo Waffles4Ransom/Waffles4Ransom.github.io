@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "'Mornings are for java(script) and contemplation...'"
+title:      "'Mornings are for JavaScript and contemplation...'"
 date:       2020-04-30 02:21:54 -0400
 permalink:  mornings_are_for_java_script_and_contemplation
 ---
