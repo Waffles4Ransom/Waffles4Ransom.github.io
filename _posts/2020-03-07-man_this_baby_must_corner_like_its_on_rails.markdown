@@ -5,8 +5,7 @@ date:       2020-03-07 01:30:10 -0500
 permalink:  man_this_baby_must_corner_like_its_on_rails
 ---
 
-
-![](https://i.imgur.com/fQlWbwXm.jpg)
+![](https://i.imgur.com/oCqCsii.gif)
 
 Moving on from Sinatra to Rails.
 
@@ -31,17 +30,17 @@ So I thought...wouldn't it be even more unofficially, official if we had our ver
 
 Obviously this project isn't hosted yet, but it's my goal to one day do so for me and my friends. 
 
-### DAM Movie Club 
+## DAM Movie Club 
 
 A place for all members of Movie Club to rate &  review the movies we see together. 
 
-#### Basic Features
+### Basic Features
 
 * once a member has signed up they are prompted to create their profile 
 * afterwards they can start reviewing the movies they attended
 * members can leave comments on each other's reviews to promote discourse and community
 
-#### Getting Started
+### Getting Started
 
 The steps to make this dream a reality:
 1. plan out the models and their relationships
