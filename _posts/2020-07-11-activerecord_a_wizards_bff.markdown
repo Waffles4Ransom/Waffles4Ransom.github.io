@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "ActiveRecord, a wizard's BFF..."
-date:       2020-07-11 22:30:13 +0000
+date:       2020-07-11 18:30:14 -0400
 permalink:  activerecord_a_wizards_bff
 ---
 
@@ -27,7 +27,8 @@ So let's talk about the basics of ActiveRecord. The most commonly used features 
 3. data validations
 4. the query interface
 
-#### ActiveRecord Migrations 
+
+### ActiveRecord Migrations 
 
 With AR, we have the ability to spin up new schema modifications, rather than write them manually. Migrations are written in Ruby so we aren't actually writing any SQL, and are used to add, modify or delete database tables.
 
@@ -66,7 +67,7 @@ In a model generator, the model name should be CamelCased and singular.
 
 Another accepted genreator column type is references, for example `user:references` .  This will give us a user_id column and appropriate index and is useful for creating data relationships which leads us to the next topic...
 
-#### ActiveRecord Associations
+### ActiveRecord Associations
 In AR, associations are connections between two models to create relationships within your data. They are created by the use of macros which are called from the model file; there are six association types.
 
 Using the association macros looks like:
@@ -102,7 +103,7 @@ This returns an array of all associated objects. If no records are found, an emp
 
 ![](https://media.giphy.com/media/twchU3xTn3Vg4/giphy.gif)
 
-#### ActiveRecord Validations 
+### ActiveRecord Validations 
 
 To ensure we aren't persisting any unwanted data into our database, we can use built-in AR validation helpers. They are method calls made in a model class definition that check to make sure the data of a new object is valid before it is saved. That way we can stop objects from exisiting that might be missing required data or are in an unexpected format. If a validation fails, the object will not be saved and error messages are created.
 
@@ -128,7 +129,7 @@ lorien.errors.full_messages
 
 When an object is created via a web form, we can use these error messages to display back to a user why their attempt has failed, which creates a good user experience. 
 
-#### ActiveRecord Query Interface 
+### ActiveRecord Query Interface 
 
 ActiveRecord provides us with methods and conditions that perform queries on the database. We don't have to write any SQL to retrieve the data we want. 
 
